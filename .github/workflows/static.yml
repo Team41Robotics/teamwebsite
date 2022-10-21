@@ -1,0 +1,21 @@
+on: [push]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    name: Publish to Cloudflare Pages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+          main
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: eb2a2cebe5a9526e769c6fd63fea0d0a
+          projectName: team41robo
+          directory: main
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
