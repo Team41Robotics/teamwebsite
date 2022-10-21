@@ -23,7 +23,7 @@ export default function (props) {
 			</Helmet>
 			<div id="home-content">
 				<div id="home-title" className="text-center my-3">
-					What do you want to learn?
+					Team 41 Robotics
 				</div>
 				<div id="home-row-nav" className="mb-3 text-center">
 					<button className="btn">

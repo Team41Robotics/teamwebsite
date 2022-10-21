@@ -136,9 +136,8 @@ export default function (props) {
 												<br />
 												<h3>About</h3>
 												<p>
-													This site is maintained by James Narayanan and Peter
-													Linder. Content contributions made by James Narayanan,
-													Peter Linder, Mason DiGiorgio, and Eliana Sussner.
+													Original code by James Narayanan and Peter
+													Linder. Edited and manager by Team 41 Robotics.
 													Created for use by FRC team 41.
 												</p>
 											</div>
