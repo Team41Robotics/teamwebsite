@@ -1,0 +1,85 @@
+/* The default is dark mode */
+body {
+	color-scheme: light dark;
+
+	/* If you change the accent color, make sure to change it in the svg's that use it too! */
+	--accent: #4bff8b;
+	--accent-fade: #a6ffda;
+	--page-background: #272822;
+	--container-background: rgba(0, 0, 0, 0.15);
+	--subrow-background: rgba(0, 0, 0, 0.15);
+	--block-background: rgba(255, 255, 255, 0.1);
+	--main-text: #fff;
+	--toc-text: #bbb;
+	--accent-button-text: #333;
+	--transition-length: 0.5s;
+
+	/* Prism colors */
+	--code-main: #f8f8f2;
+	--code-inline-bg: rgba(0, 0, 0, 0.25);
+	--code-class-name: #ff6e6e;
+	--code-keyword: #66d9ef;
+	--code-string: #a6e22e;
+	--code-number: #ae81ff;
+}
+body:not(.dark) {
+	/* If you change the accent color, make sure to change it in the svg's that use it too! */
+	--accent: #7a32ff;
+	--accent-fade: #af84ff;
+	--page-background: white;
+	--container-background: rgba(0, 0, 0, 0.05);
+	--subrow-background: white;
+	--block-background: var(--container-background);
+	--main-text: #222;
+	--toc-text: #555;
+	--accent-button-text: white;
+
+	/* Prism colors */
+	--code-main: #272727;
+	--code-inline-bg: rgba(0, 0, 0, 0.06);
+	--code-class-name: #e04444;
+	--code-keyword: #2483d1;
+	--code-string: #4ab11a;
+	--code-number: #8644ff;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--page-background);
+	padding: 1rem 1rem 4rem 1rem !important;
+	margin: 0;
+	color: var(--main-text) !important;
+}
+@media (min-width: 992px) {
+	body {
+		padding: 1rem !important;
+	}
+}
+
+.btn {
+	transition: 0s;
+	background-color: var(--accent);
+	color: var(--accent-button-text);
+}
+.btn:hover {
+	color: var(--accent-button-text);
+}
+
+a,
+a:hover {
+	color: var(--accent);
+}
+
+span.code {
+	font-family: monospace;
+	padding: 2px 8px 2px 8px;
+	background-color: #222;
+	color: rgb(248, 19, 19);
+}
+
+.monokai {
+	background-color: #333;
+}

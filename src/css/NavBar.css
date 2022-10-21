@@ -1,0 +1,38 @@
+@font-face {
+	font-family: Hacked;
+	src: url(https://hackedfont.com/HACKED.ttf);
+}
+
+#navbar {
+	background-color: var(--container-background);
+}
+
+#navbar .navbar-brand {
+	font-size: xx-large;
+	font-family: Hacked;
+	color: var(--accent);
+}
+
+#navbar .nav-item:active {
+	outline: none;
+	box-shadow: none;
+}
+
+#navbar .nav-item a.nav-link {
+	color: var(--main-text);
+	transition: color 0.25s;
+}
+
+#navbar .nav-item a.nav-link:hover {
+	color: var(--accent-fade);
+}
+
+#navbar .nav-item.active a.nav-link {
+	color: var(--accent);
+}
+
+@media (max-width: 992px) {
+	a.navbar-brand {
+		margin-right: 0;
+	}
+}
