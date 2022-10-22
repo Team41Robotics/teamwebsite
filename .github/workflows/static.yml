@@ -16,5 +16,5 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: eb2a2cebe5a9526e769c6fd63fea0d0a
           projectName: team41robo
-          directory: 
+          directory: /
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
